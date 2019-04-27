@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_min_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/test_dialog_one"
+        style="@style/base_text_style"
+        android:text="ClickOne" />
+
+    <TextView
+        android:id="@+id/test_dialog_two"
+        style="@style/base_text_style"
+        android:text="ClickTwo" />
+
+    <TextView
+        android:id="@+id/test_dialog_three"
+        style="@style/base_text_style"
+        android:text="ClickThree" />
+
+    <TextView
+        android:id="@+id/test_dialog_four"
+        style="@style/base_text_style"
+        android:text="ClickFour" />
+
+</LinearLayout>

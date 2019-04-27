@@ -3,7 +3,7 @@ package com.splendid.util;
 import android.app.Activity;
 
 import com.splendid.listener.DialogConfirmListener;
-import com.splendid.view.CommonTipsDialog;
+import com.splendid.view.CommonDialog;
 
 public class DialogUtil {
 
@@ -11,7 +11,7 @@ public class DialogUtil {
     public static void showSelectionDialog(Activity activity, String title, String message,
                                                   String cancelTxt, String confirmTxt, DialogConfirmListener confirmListener) {
         if (activity != null && !activity.isFinishing()) {
-            CommonTipsDialog dialog = (CommonTipsDialog) CommonTipsDialog.newBuilder()
+            CommonDialog dialog = (CommonDialog) CommonDialog.newBuilder()
                     .setTitle(title)
                     .setMessageContent(message)
                     .setCancelTxt(cancelTxt)
@@ -27,7 +27,7 @@ public class DialogUtil {
                                                   String title, String message, String confirmTxt,
                                                   DialogConfirmListener confirmListener) {
         if (activity != null && !activity.isFinishing()) {
-            CommonTipsDialog dialog = (CommonTipsDialog) CommonTipsDialog.newBuilder()
+            CommonDialog dialog = (CommonDialog) CommonDialog.newBuilder()
                     .setTitle(title)
                     .setMessageContent(message)
                     .setConfirmTxt(confirmTxt)

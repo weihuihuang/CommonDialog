@@ -24,7 +24,7 @@ import com.splendid.util.CommonUtil;
 import static com.splendid.model.DialogParams.INVALID_LAYOUT;
 
 @SuppressWarnings("unused")
-public class CommonTipsDialog extends DialogFragment {
+public class CommonDialog extends DialogFragment {
 
     protected TextView mTitle;
 
@@ -188,7 +188,7 @@ public class CommonTipsDialog extends DialogFragment {
     }
 
     public static DialogFragment newInstance(DialogBuilder builder) {
-        CommonTipsDialog dialog = new CommonTipsDialog();
+        CommonDialog dialog = new CommonDialog();
         dialog.dialogParams = builder.getDialogParams();
         return dialog;
     }

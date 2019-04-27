@@ -3,13 +3,12 @@ package com.splendid.commondialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.splendid.listener.DialogCancelListener;
 import com.splendid.listener.DialogConfirmListener;
 import com.splendid.util.CommonUtil;
-import com.splendid.view.CommonTipsDialog;
+import com.splendid.view.CommonDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void showDialogOne() {
-        CommonTipsDialog dialog = (CommonTipsDialog) CommonTipsDialog.newBuilder()
+        CommonDialog dialog = (CommonDialog) CommonDialog.newBuilder()
                 .setTitle("LOL重要提示")
                 .setMessageContent("设计师你看看瑞文，这伤害，不如我们虚弱艾瑞莉娅吧...")
                 .setCancelTxt("削弱")
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void showDialogTwo() {
-        CommonTipsDialog dialog = (CommonTipsDialog) CommonTipsDialog.newBuilder()
+        CommonDialog dialog = (CommonDialog) CommonDialog.newBuilder()
                 .setTitle("成就达成")
                 .setMessageContent("恭喜获得火影劫称号")
                 .setConfirmTxt("领取")
@@ -82,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void showDialogThree() {
         String msg = "是否删除疾风剑豪--亚索";
-        CommonTipsDialog dialog = (CommonTipsDialog) CommonTipsDialog.newBuilder()
+        CommonDialog dialog = (CommonDialog) CommonDialog.newBuilder()
                 .setMessageContent(msg)
                 .setCancelTxt("保留")
                 .setConfirmTxt("删除")
@@ -106,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void showDialogFour() {
-        CommonTipsDialog dialog = (CommonTipsDialog) CommonTipsDialog.newBuilder()
+        CommonDialog dialog = (CommonDialog) CommonDialog.newBuilder()
                 .setMessageContent("生亦我所欲也，E亦我所欲也，舍生而取者也")
                 .setCancelTxt("删除")
                 .setDialogCancelListener(new DialogCancelListener() {
